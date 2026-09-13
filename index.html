@@ -94,16 +94,25 @@ header p {
 .buttons {
     margin-top: 25px;
 }
-        .buttons a {
-            display: inline-block;
-            margin: 8px;
-            padding: 12px 24px;
-            background: white;
-            color: #111827;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-        }
+.buttons a {
+    display: inline-block;
+    margin: 8px;
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.25);
+    color: white;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    font-weight: bold;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    transition: all 0.3s ease;
+}
+
+.buttons a:hover {
+    background: rgba(255, 255, 255, 0.4);
+    border-color: white;
+}
 
         .buttons a:hover {
             opacity: 0.85;
