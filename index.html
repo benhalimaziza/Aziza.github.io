@@ -45,41 +45,55 @@
             text-decoration: underline;
         }
 
-   header {
+header {
     background-image: url('hero-background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
+    min-height: 580px;
+    padding: 90px 20px;
     text-align: center;
-    padding: 100px 20px;
 }
-  header h1 {
-    font-size: 52px;
+
+/* Bloc de texte placé à gauche */
+header h1,
+header h2,
+header p,
+header .buttons {
+    max-width: 620px;
+    margin-left: 7%;
+    margin-right: auto;
+}
+
+header h1 {
+    font-size: 44px;
     font-weight: 700;
-    letter-spacing: 1.5px;
-    margin: 0 0 15px;
-    font-family: "Trebuchet MS", Arial, sans-serif;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+    margin-bottom: 12px;
 }
 
-        header h2 {
-            font-size: 24px;
-            font-weight: normal;
-            color: #d1d5db;
-            margin: 0;
-        }
+header h2 {
+    font-size: 21px;
+    font-weight: normal;
+    color: #e5e7eb;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
 
-        header p {
-            max-width: 700px;
-            margin: 25px auto;
-            color: #d1d5db;
-            font-size: 17px;
-        }
+header p {
+    max-width: 580px;
+    color: #e5e7eb;
+    font-size: 16px;
+    line-height: 1.7;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
 
-        .buttons {
-            margin-top: 30px;
-        }
-
+.buttons {
+    margin-top: 25px;
+}
         .buttons a {
             display: inline-block;
             margin: 8px;
